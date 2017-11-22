@@ -1,0 +1,12 @@
+/* Pledge: "I pledge my honor that I have abided by the Stevens Honor System." */
+
+body {
+	margin: 20px 100px 20px 100px;
+	background-color: aqua;
+	font-family: "Verdana", sans-serif;
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+}
