@@ -23,3 +23,29 @@ body div figure img {
 body div figure figcaption {
 	align-self: center;
 }
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+ 	#logo {
+ 		width: 75%;
+ 		height: 75%;
+ 	}
+
+ 	body p {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 	}
+ }
+
+ /* Phone */
+@media screen and (max-width: 400px) {
+ 	#logo {
+ 		width: 50%;
+ 		height: 50%;
+ 	}
+
+ 	body p {
+ 		display: flex;
+ 		flex-flow: column nowrap;
+ 	}
+ }
