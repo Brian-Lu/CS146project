@@ -3,6 +3,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Corben', Georgia, Times, serif;
 }
+
 p, div {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
@@ -18,11 +19,12 @@ body {
 }
 
 figure {
-	max-width: 100%;
-	height:auto;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+}
+
+body div figure img {
+	align-self: center;
 }
 
 body div figure figcaption {
