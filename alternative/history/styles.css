@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+
+/* Pledge: "I pledge my honor that I have abided by the Stevens Honor System." */
+
+body {
+	background-color: aqua;
+	font-family: "Verdana", sans-serif;
+}
+
+#logo {
+		max-width: 100%;
+	height:auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px
+}
+
+figure {
+	max-width: 100%;
+	height:auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+body div figure figcaption {
+	align-self: center;
+}
+/*Computer*/
+@media screen and (min-width: 801px){
+	.text{
+	margin: 20px 100px 20px 100px;
+	background-color: aliceblue;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 10px
+	}
+}
+/* Tablet */
+@media screen and (max-width: 800px) {
+ 	#logo {
+ 		max-width: 100%;
+ 		height: auto;
+ 	}
+
+ 	body p {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 	}
+	
+ }
+
+ /* Phone */
+@media screen and (max-width: 400px) {
+ 	#logo {
+ 		width: 50%;
+ 		height: 50%;
+ 	}
+
+ 	body p {
+ 		display: flex;
+ 		flex-flow: column nowrap;
+ 	}
+ }
