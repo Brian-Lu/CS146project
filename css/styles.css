@@ -28,7 +28,7 @@ body div figure figcaption {
 /* Computer */
 @media screen and (min-width: 801px){
 	.text {
-		margin: 20px 100px 20px 100px;
+		margin: 10px 20px 10px 10px;
 		background-color: aliceblue;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 		padding: 10px
