@@ -15,7 +15,10 @@ function onSubmitQ() {
 	var tag_p = document.createElement("P");
 	var att_id = document.createAttribute("id");
 	att_id.value = "p-result";
+	var att_class = document.createAttribute("class");
+	att_class.value = "animated tada";
 	tag_p.setAttributeNode(att_id);
+	tag_p.setAttributeNode(att_class);
 
 	// Calculate score
 	var score = 0;
@@ -27,16 +30,16 @@ function onSubmitQ() {
 
 	// Show results
 	var tag_strong = document.createElement("STRONG");
-	var text = document.createTextNode("Last quiz score: " + score + " / 8");
+	var text = document.createTextNode("Last quiz score: " + score + " / 8 (" + score / 8 * 100 + "%)");
 	tag_strong.appendChild(text);
 	tag_p.style.color = "blue";
 	tag_p.appendChild(tag_strong);
 	sectionresult.appendChild(tag_p);
-	effect(tag_p);
+	displayScore(tag_p);
 }
 
-function effect(control) {
+function displayScore(control) {
 	scroll(0,0);
-	control.style.opacity = '1.0';
-	control.style.transition = 'opacity 0.8s';
+	// control.style.opacity = '1.0';
+	// control.style.transition = 'opacity 0.8s';
 }
