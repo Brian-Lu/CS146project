@@ -25,6 +25,13 @@ function onSubmitQ() {
 	for (var qnum = 1; qnum <= 8; qnum++) {
 		if (document.getElementById(correctRadios[qnum]).checked) {
 			score++;
+			var correctAnswerElement = document.getElementById(correctRadios[qnum]).parentElement.nextElementSibling;
+			correctAnswerElement.innerHTML = "Congratulations you got this question correct!";
+		}
+		else {
+			var formElement = document.getElementById(correctRadios[qnum]).parentElement.nextElementSibling;
+			var correctAnswer = document.getElementById(correctRadios[qnum]).value;
+			formElement.innerHTML = "Sorry the correct answer for this was " + correctAnswer + ".";
 		}
 	}
 
