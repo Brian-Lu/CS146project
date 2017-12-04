@@ -31,7 +31,7 @@ function onSubmitQ() {
 		else {
 			var formElement = document.getElementById(correctRadios[qnum]).parentElement.nextElementSibling;
 			var correctAnswer = document.getElementById(correctRadios[qnum]).value;
-			formElement.innerHTML = "Sorry the correct answer for this was " + correctAnswer + ".";
+			formElement.innerHTML = "Sorry, the correct answer for this was " + correctAnswer + ".";
 		}
 	}
 
